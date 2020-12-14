@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = "Tôi yêu ngôn ngữ lập trình Javascript";
+    var count = 0;
+    for(var i = 0; i < str.length; i++) {
+        if(str.charAt(i) === 'a') {
+            count++;
+        }
+    }
+    document.write("Số chữ a có trong chuỗi \"Tôi yêu ngôn ngữ lập trình Javascript\" là: " + count + "<br>");
+    var res = str.split(" ");
+    document.write("Tách thành mảng: " + res + "<br>");
+    document.write(str.length-res.length+1 + "<br>");
+    var language = str.replace('Javascript', 'Typescript');
+    document.write(language);
+</script>
+</body>
+</html>
