@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var dn = new Date();
+    var d = new Date(2001, 12, 6  , 21, 4, 5);
+    var nam =  dn.getFullYear()-d.getFullYear();
+    var thang = nam*12+dn.getMonth();
+    var ngay =  thang*365;
+    var gio =   ngay*24;
+    var phut =  gio*60;
+    var giay =  phut*60;
+    document.write("Tôi đã sống " + nam + " năm.<br>");
+    document.write("Tôi đã sống " + thang + " tháng <br>");
+    document.write("Tôi đã sống " + ngay + " ngày <br>");
+    document.write("Tôi đã sống " + gio + " giờ <br>");
+    document.write("Tôi đã sống " + phut + " phút <br>");
+    document.write("Tôi đã sống " + giay + " giây<br>");
+
+</script>
+</body>
+</html>
